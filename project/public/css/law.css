@@ -1,0 +1,191 @@
+
+
+.law {
+ width: 800px;
+ margin: 150px auto;
+}
+
+.law>h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.noticebox_wrap {
+  width: 100%;
+  margin: auto;
+}
+
+.noticebox_wrap>h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.noticebox {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 20px;
+}
+
+.txtbox>.boldTxt {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.txtbox>p {
+  font-size: 14px;
+}
+
+.law_th {
+  width: 100%;
+}
+
+
+.law_th td {
+  padding: 10px;
+}
+
+.law_th .law_tb {
+  background-color: lightblue;
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+}
+
+.law_th .th1 {
+  width: 20%;
+}
+
+.law_th .th2 {
+  width: 50%;
+}
+
+.law_th .th3 {
+  width: 30%;
+}
+
+.law_tb_wrap {
+  width: 100%;
+}
+
+.law_tb_wrap .law_tb {
+  text-align: center;
+  white-space: normal;
+}
+
+.law_tb_wrap td {
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 0;
+}
+
+.law_tb_wrap .tb1 {
+  width: 20%;
+}
+
+.law_tb_wrap .tb2 {
+  width: 50%;
+}
+
+.law_tb_wrap .tb3 {
+  width: 30%;
+}
+
+.agree_wrap {
+  margin-top: 20px;
+}
+
+
+.l_btn_wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.l_btn {
+  margin-right: 50px;
+  width: 50%;
+  height: 50px;
+  font-weight: 600;
+  border-radius: 3px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.r_btn {
+  width: 50%;
+  height: 50px;
+  font-weight: 600;
+  border-radius: 3px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.l_btn:hover, .r_btn:hover {
+  background-color: #07072d;
+  color: #f2d01f;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  .law {
+    width: 100%;
+    margin: 100px 0;
+  }
+
+  .noticebox_wrap>h2 {
+    font-size: 25px;
+  }
+
+  .txtbox>.boldTxt {
+    font-size: 16px;
+  }
+
+  .txtbox>p {
+    font-size: 12px;
+  }
+  
+  table {
+    width: 100%;
+  }
+
+  thead tr {
+    font-size: 14px;
+  }
+
+  tbody tr {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .l_btn {
+    font-size: 11px;
+  }
+
+  .r_btn {
+    font-size: 11px;
+  }
+
+  .agree_wrap {
+    font-size: 14px;
+  }
+
+  .noticebox_wrap {
+    width: 100%;
+  }
+
+
+
+
+  /*max-width: 768px*/
+}

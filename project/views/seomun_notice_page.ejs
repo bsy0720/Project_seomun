@@ -1,0 +1,56 @@
+
+    
+    
+    <main class="page_main">
+        <section>
+               <div class="w1100">
+                    <div class="right">
+                        <a href="#"></a>
+                    </div>
+                    <div>
+                        <h1 id="night"><!--2022 야시장 매대 운영자 모집 품평회 심사 대상 명단 공지--><%=row.title%></h1>
+                    </div>
+                    <div class="middle_wrap">
+                        <p><!--2022.04.18--><%=row.s_update%></p>
+                        <!--<div class="middle">
+                            <p>
+                                <img src="../img/icon_file.png" class="middle_img">
+                                <a href="">품평회 심사대상자2022.04...pdf</a>
+                            </p>
+                            <p>
+                                <img src="../img/icon_file.png" class="middle_img">
+                                <a href="">야시장 품평회 참가자 설명자료2022.04...pdf</a>
+                            </p>
+                        </div>-->
+                    </div>
+                    <% if(typeof errs !== 'undefined'){ %>
+                        <% errs.forEach((err) =>{%>
+                            <h3><%=err.param%> : <%=err.msg%></h3>
+                       <%})%>
+                   <%}%>
+                    <div class="left">
+                       <%=row.content%>
+                    </div>
+                    <div class="left2_wrap">
+                        <div class="left2">
+                            <p>다음 글</p>
+                            <span>
+                                <a href="#">서문·칠성야시장 매대운영자 모집공고</a> 
+                            </span>
+                        </div>
+                        <div class="left2">
+                            <p>이전 글</p>
+                            <span>
+                                <a href="#">없음</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="right2_wrap">
+                        <a class="right2" href="seomun_notice">목록</a>
+                    </div>
+               </div> 
+           </article>
+        </section>
+    </main>
+    
+ 

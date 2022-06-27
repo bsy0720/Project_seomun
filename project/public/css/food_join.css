@@ -1,0 +1,131 @@
+
+
+.f_join_wrap{
+ max-width: 768px;
+ margin: 0 auto;
+ margin-top: 150px;
+}
+
+.f_join_wrap>h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.f_join {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.f_txt {
+  position: relative;
+  left: 20%;
+}
+
+.f_input {
+  text-align: center;
+}
+
+#only {
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid lightgray;
+  width: 60%;
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#birth {
+  height: 40px;
+}
+
+.food_btn_wrap {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+#food_btn {
+  width: 50%;
+  height: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #fff;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#food_btn:hover {
+  background-color: #07072d;
+  color: #f2d01f;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  .f_join_wrap img {
+    width: 280px;
+    height: 100%;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  
+  div>h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  #food_btn {
+    font-size: 12px;
+  }
+
+  .f_join_wrap {
+    width: 100%;
+  }
+
+  .f_join {
+    width: 100%;
+  }
+
+  .f_join_wrap>h1 {
+    width: 100%;
+  }
+
+  div>h2 {
+    width: 100%;
+  }
+
+  .f_txt {
+    width: 50%;
+  }
+
+
+
+
+  /*max-width: 768px*/
+}
+
+
+
+
+
+

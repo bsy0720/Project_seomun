@@ -1,0 +1,536 @@
+
+.w1440 {
+    margin: auto;
+    background-color: #e5e5e5;
+    padding-top: 100px;
+}
+
+.top>p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.top>p>a {
+    color: #000;
+    font-size: 16px;
+}
+
+.sm_menu_wrap {
+    width: 100%;
+    background-color: #e5e5e5;
+    display: flex;
+    position: relative;
+}
+
+.sm_video {
+    width: 70%;
+}
+
+.sm_video>iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.yellowbox {
+    position: relative;
+    width: 30%;
+    height: 400px;
+    display: block;
+    background-image: url(../img/w_eat.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.yellowbox>a {
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main_sm_notice_wrap {
+    display: flex;
+    width: 100%;  
+    position: relative;
+}
+
+.main_sm_notice {
+    padding-left: 20px;
+    margin-top: 50px;
+    width: 40%; 
+    margin: auto; 
+    box-sizing: border-box;
+}
+
+.nt {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.nt>p:first-child {
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;   
+}
+
+
+.nt a {
+    color: #000;
+    font-size: 20px;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.main_sm_notice ul>li>a {
+    color: #000;
+    font-size: 17px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.main_box {
+    display: flex;
+    width: 60%;
+    height: 400px;
+}
+
+.customer {
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/center.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.customer>a {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+}
+
+.road {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/road.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+.road>a {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+}
+
+.sm_event_wrap {
+    width: 100%;
+    height: 155px;
+    background-color: #e5e5e5;
+    margin-top: 100px;
+    display: flex;
+}
+
+.sm_event_img1 {
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/banner_big.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-right: 1px solid #ededed;
+}
+
+.sm_event_img2 {
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/tour_mission_big.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.sm_gallery_title {
+    width: 100%;
+    background-color: #07072d;
+    margin-top: 100px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.sm_gallery_title>h2 {
+    color: #f2d01f;
+    font-size: 20px;
+}
+
+.sm_gallery_title>h3  {
+    color: #f2d01f;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.sm_gallery {
+    width: 100%;
+    height:170px ;
+    background-color: #e5e5e5;
+    display: flex;
+    padding: 105px 0;
+} 
+
+.sm_gallery>div {
+    width: 20%;
+    height: 170px;
+}
+
+.sm_gallery>div>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.sm_gallery>div>.img1 {
+    background-image: url(../img/gallery1.jpg);
+    background-size: 100%;
+}
+
+.sm_gallery>div>.img2 {
+    background-image: url(../img/gallery2.jpg);
+    background-size: 100%;
+}
+.sm_gallery>div>.img3 {
+    background-image: url(../img/gallery3.jpg);
+    background-size: 130%;
+}
+.sm_gallery>div>.img4 {
+    background-image: url(../img/gallery4.jpg);
+    background-size: 130%;
+}
+.sm_gallery>div>.img5 {
+    background-image: url(../img/gallery5.jpg);
+    background-size: 130%;
+}
+
+
+
+/***************************media start************************************/
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .w1440 {
+        width: 100%;
+    }
+
+    .sm_menu_wrap {
+        width: 100%;
+        margin: auto;
+    }
+
+    .sm_video {
+        width: 50%;
+    }
+
+    .yellowbox {
+        width: 50%;
+    }
+
+    .yellowbox>a {
+        font-size: 20px;
+    }
+
+    .main_sm_notice_wrap {
+        width: 100%;
+        margin: auto;
+    }
+
+    .main_sm_notice {
+        width: 50%;
+    }
+
+    .nt {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .nt a {
+        font-size: 14px;
+    }
+
+    .main_box {
+        width: 50%;
+    }
+
+    .customer {
+        width: 100%;
+    }
+
+    .customer>a {
+        font-size: 20px;
+    }
+
+    .road {
+        width:100%;
+    }
+
+    .road>a {
+        font-size: 20px;
+    }
+
+    .main_sm_notice ul>li>a {
+        font-size: 16px;
+    }
+
+    .sm_gallery_title>h2 {
+        font-size: 18px;
+    }
+
+    .sm_gallery_title>h3 {
+        font-size: 23px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /*max-width: 1200px*/
+}
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+
+    .sm_menu_wrap {
+        width: 100%;
+    }
+
+    .sm_video {
+        width: 50%;
+    }
+
+    .yellowbox {
+        width: 50%;
+    }
+
+    .main_sm_notice_wrap {
+        width: 100%;
+    }
+
+    .main_sm_notice {
+        width: 50%;
+    }
+
+    .main_sm_notice ul>li>a {
+        display: block;
+        font-size: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .main_box {
+        width: 50%;
+    }
+
+    .customer {
+        width: 100%;
+    }
+
+    .road {
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*max-width: 1000px*/
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .w1440 {
+        width: 100%;
+    }
+
+    .m_none {
+        display: none;
+    }
+
+    .sm_menu_wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sm_video {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .yellowbox {
+        width: 100%;
+        background-image: url(../img/m_eat.png);
+    }
+
+    .main_sm_notice_wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .main_sm_notice {
+        width: 100%;
+    }
+
+    .top>p {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .top a {
+        font-size: 13px;
+        color: #000;
+    }
+
+
+    .main_box {
+        width: 100%;
+        display: flex;
+        margin-top: 15px;
+    }
+
+    .customer {
+        position: relative;
+        width: 50%;
+    }
+
+    .customer>a {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);            
+    }
+
+    .road {
+        width: 50%;
+    }
+
+    .road>a {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);         
+    }
+
+    .sm_event_wrap {
+        width: 100%;
+    }
+    
+    .yellowbox>a {
+        font-size: 20px;
+    }
+
+    .top {
+        width: 95%;
+    }
+
+    .main_sm_notice>p:first-child {
+        font-size: 20px; 
+    }
+
+    .main_sm_notice>p>a {
+        font-size: 18px;
+    }
+
+    .main_sm_notice ul>li>a {
+        font-size: 14px;
+    }
+
+
+    .customer>a {
+        font-size: 20px;
+    }
+
+    .road>a {
+        font-size: 20px;
+    }
+
+    .sm_gallery_title>h2  {
+        font-size: 17px;
+    }
+
+    .sm_gallery_title>h3 {
+        font-size: 22px;
+    }
+
+    .sm_event_wrap {
+        width: 100%;
+    }
+
+    .sm_event_img1 {
+        background-image: url(../img/banner.png);
+    }
+
+    
+    .sm_event_img2 {
+        background-image: url(../img/tour_mission.png);
+    }
+
+
+
+
+
+
+
+
+
+
+    /*max-width: 768px*/
+}
+
+
+
+

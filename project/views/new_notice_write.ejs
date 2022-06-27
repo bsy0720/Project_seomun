@@ -1,0 +1,61 @@
+   <main>
+        <section>
+            <h2>공지사항 수정</h2>
+            <% if(typeof errs !== 'undefined') { %>
+                <% errs.forEach(() => { %>
+                    <h3><%err.param%> : <%=err.msg%></h3>
+                <%})%>
+            <%}%>
+            <form method="POST" action="new" id="w1440">
+                <table id="nw_table">
+                    <tr>
+                        <td class="w_right"><label>종류</label></td>
+                        <td>
+                            <input type="text" name="id" class="hro" value="<%=row.id%>">
+                            <span>*공지 또는 번호(ex.75, 76 등)로 입력*</span>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="w_right"><label>제목</label></td>
+                        <td><input type="text" id="noti_w_title" class="ti hro" name="title" value="<%=row.title%>"></td>  <!--인터페이스 구현서 안에 있는 아이디 작성-->
+                    </tr>
+                    <tr>
+                        <td class="w_right"><label>작성자</label></td>
+                        <td><input type="text" class="hro"></td>
+                    </tr>
+                    <tr>
+                        <td class="w_right"><label>비밀번호</label></td>
+                        <td><input type="password" class="hro" name="pw" value="<%=row.pw%>"></td>
+                    </tr>
+                    <tr>
+                        <td class="w_right"><label>날짜</label></td>
+                        <td>
+                            <input type="text" placeholder="2022.04.19" class="hro" name="s_update" value="<%=row.s_update%>">
+                            <span>*8자리 숫자 입력*</span>
+                        </td>
+                    </tr>
+                    <tr class="big">
+                        <td class="w_right"><label>내용 작성</label></td>
+                        <td><textarea name="content">
+                            <%=row.content%>
+                        </textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="w_right"><label>첨부</label></td>
+                        <td>
+                            <input type="text">
+                            <input type="button" value="파일첨부">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="center" colspan="2">
+                            <input type="submit" value="저장">
+                            <input type="submit" value="목록">
+                        </td>    
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+   

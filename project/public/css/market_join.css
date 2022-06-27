@@ -1,0 +1,113 @@
+
+
+.m_join_wrap {
+ max-width: 768px;
+ margin: 0 auto;
+ margin-top: 150px;
+}
+
+.m_join_wrap>h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.m_join {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.market_txt {
+  position: relative;
+  left: 20%;
+}
+
+.m_input {
+  text-align: center;
+}
+
+#only {
+  border-radius: 3px;
+  border: 1px solid lightgray;
+  width: 60%;
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#mBirth {
+  height: 40px;
+}
+
+.market_btn_wrap {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+#market_btn {
+  width: 50%;
+  height: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #fff;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#market_btn:hover {
+  background-color: #07072d;
+  color: #f2d01f;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  .m_join_wrap img {
+    width: 280px;
+    height: 100%;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  
+  div>h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  #market_btn {
+    font-size: 12px;
+  }
+
+  .market_txt {
+    width: 50%;
+  }
+
+  .m_join_wrap>h1 {
+    width: 100%
+  }
+
+
+
+
+  /*max-width: 768px*/
+}

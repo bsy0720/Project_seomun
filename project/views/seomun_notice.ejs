@@ -1,0 +1,226 @@
+    
+  <div class="header_wrap">
+    <div class="m_header img">
+      <h2>고객센터</h2>
+    </div>
+    <div class="mb_main_header2"></div>
+    <nav class="l_header_wrap">
+      <ul class="l_header">
+        <li><a href="#">공지사항</a></li>
+        <li><a href="#">편의시설</a></li>
+        <li><a href="#">여행정보</a></li>
+      </ul>
+    </nav>
+    <nav class="mb_l_header_wrap">
+      <ul class="mb_l_header">
+        <li><a href="#">공지사항</a></li>
+        <li><a href="#">편의시설</a></li>
+        <li><a href="#">여행정보</a></li>
+      </ul>
+    </nav>
+  </div>
+
+ 
+<main class="w1200">
+  <section id="container">
+   <article class="contents">
+    <div class="search">
+     <span class="search_txt">SEARCH</span>
+      <div class="select">
+        <select id="search">
+          <option value="data_title">제목</option>
+          <option value="date_content">내용</option>
+        </select>
+      </div>
+      <div class="textbox">
+        <input type="text" id="ex_input" placeholder="검색어를 입력해 주세요">
+        <input alt="검색" src="../img/btn_search.png" type="image" class="btnSearch">
+      </div>
+    </div>
+   </article>
+  <div class="table_wrap web">
+    <table>
+      <thead>     
+        <tr>
+          <th class="no1">번호</th>
+          <th class="no2">제목</th>
+          <th class="no3">작성일</th>
+          <th class="no4">첨부</th>
+        </tr> 
+      </thead>         
+      <tbody>  
+        <tr>
+          <th class="no1">공지</th>
+          <td class="no2" id="none left"><a href="page">2022 야시장 매대 운영자 모집 품평회 심사 대상 명단 공지 첨부파일</a></td>
+          <td class="no3" id="none">04-18</td>
+          <td class="no4" id="none"></td>
+        </tr>
+        <tr>
+          <th class="no1">공지</th>
+          <td class="no2" id="none left"><a href="#">2021 야시장 2차 매대 운영자 모집 품평회 심사 대상자 및 공고</a></td> <!--white space nowrap-->
+          <td class="no3" id="none">11-02</td>
+          <td class="no4" id="none"></td>
+        </tr>
+        <tr>
+          <th class="no1">공지</th>
+          <td class="no2" id="none left"><a href="#">2021년 2차 야시장 매대운영자 모집 연장</a></td>
+          <td class="no3" id="none">09-30</td>
+          <td class="no4" id="none"></td>
+        </tr>
+        <tr>
+          <th class="no1">공지</th>
+          <td class="no2" id="none left"><a href="#">서문야시장 정기휴무일 변경안내</a></td>
+          <td class="no3" id="none">08-13</td>
+          <td class="no4" id="none"></td>
+        </tr>
+        <tr>
+          <th class="no1">공지</th>
+          <td class="no2" id="none left"><a href="#">영업시간 임시 단축 안내</a></td>
+          <td class="no3" id="none">07-30</td>
+          <td class="no4" id="none"></td>
+        </tr>
+        <tr>
+          <th class="no1">공지</th>
+          <td class="no2" id="none left"><a href="#">2021 야시장 매대 운영자 모집 식품분야 품평회 심사 대상 명단 발표 및 품평회 설명 자료 게시</a></td>
+          <td class="no3" id="none">04-20</td>
+          <td class="no4" id="none">
+            <img src="../img/icon_file.png">
+          </td>
+        </tr>
+        <tr>
+          <th class="no1">공지</th>
+          <td class="no2" id="none left"><a href="#">2021야시장 매대운영자 모집</a></td>
+          <td class="no3" id="none">03-19</td>
+          <td class="no4" id="none">
+            <img src="../img/icon_file.png">
+          </td>
+        </tr>
+        <% rows.forEach((row, index) => { %>
+          <tr>
+            <td class="no1" id="none"><%=row.RNUM%></td>
+            <td class="no2">
+              <a onclick="javascript:location.href='/seomun_notice_page?id=<%=row.id%>'"><%= row.title %></a>
+            </td>
+            <td class="no3" id="none"><%= row.s_update %></td>
+            <td class="no4">
+              <input type="button" onclick="javascript:location.href='/new?id=<%=row.id%>'" value="수정">
+              <input type="button" onclick="javascript:location.href='/deleteNotice?id=<%=row.id%>'" value="삭제">
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>         
+    </table>
+  </div>
+  <div class="n_btn" onclick="javascript:location.href='/notice_write'">
+    <a href="write">글쓰기</a>
+  </div>
+  <div class="page_bar">   
+    <a class="before" href="#"></a>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">7</a>
+    <a href="#">8</a>
+    <a class="next" href="#"></a>
+ </div>
+ </section>
+   
+  <section class="mobile">
+      <table>
+        <tbody>
+          <tr>
+            <td class="number">공지</td>
+            <td class="left">
+              <div>04-18</div>
+              <a href="page">2022 야시장 매대 운영자 모집 품평회 심사 대상 명단 공지 첨부파일</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="number">공지</td>
+            <td class="left">
+              <div>11-02</div>
+              <a href="#">2021 야시장 2차 매대 운영자 모집 품평회 심사 대상자 및 공고 </a>
+            </td>
+          </tr>
+          <tr>
+            <td class="number">공지</td>
+            <td class="left">
+              <div>09-30</div>
+              <a href="#">2021년 2차 야시장 매대운영자 모집 연장</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="number">공지</td>
+            <td class="left">
+              <div>08-13</div>
+              <a href="#">서문야시장 정기휴무일 변경안내</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="number">공지</td>
+            <td class="left">
+              <div>07-30</div>
+              <a href="#">영업시간 임시 단축 안내</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="number">공지</td>
+            <td class="left">
+              <div>04-20</div>
+              <a href="#">2021 야시장 매대 운영자 모집 식품분야 품평회 심사 대상 명단 발표 및 품평회 설명 자료 게시</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="number">공지</td>
+            <td class="left">
+              <div>03-19</div>
+              <a href="#">2021야시장 매대운영자 모집</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="number">75</td>
+            <td class="left">
+              <div>03-24</div>
+              <a href="#">서문·칠성야시장 매대운영자 모집공고</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="number">74</td>
+            <td class="left">
+              <div>08-19</div>
+              <a href="#">서문야시장 임시휴장 안내(2021.8.19. ~ 9.1.)</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="number">73</td>
+            <td class="left">
+              <div>04-03</div>
+              <a href="#">4월 3일 서문야시장 임시휴장</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>      
+    </div>
+    <div class="page_bar1">
+      <a class="before1" href="#"></a>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <a href="#">7</a>
+      <a href="#">8</a>
+      <a class="next1" href="#"></a>
+    </div>
+  </section>
+</main>
+
+ 
+ 
+
+<!--스크롤이 생길때는 테이블 반응형 css검색
+table-layout:fixed; -->
