@@ -49,51 +49,17 @@
         </tr> 
       </thead>         
       <tbody>  
-        <tr>
+       <tr>
           <th class="no1">공지</th>
           <td class="no2" id="none left"><a href="page">2022 야시장 매대 운영자 모집 품평회 심사 대상 명단 공지 첨부파일</a></td>
-          <td class="no3" id="none">04-18</td>
+          <td class="no3" id="none">2022-04-18</td>
           <td class="no4" id="none"></td>
         </tr>
         <tr>
           <th class="no1">공지</th>
           <td class="no2" id="none left"><a href="#">2021 야시장 2차 매대 운영자 모집 품평회 심사 대상자 및 공고</a></td> <!--white space nowrap-->
-          <td class="no3" id="none">11-02</td>
+          <td class="no3" id="none">2021-11-02</td>
           <td class="no4" id="none"></td>
-        </tr>
-        <tr>
-          <th class="no1">공지</th>
-          <td class="no2" id="none left"><a href="#">2021년 2차 야시장 매대운영자 모집 연장</a></td>
-          <td class="no3" id="none">09-30</td>
-          <td class="no4" id="none"></td>
-        </tr>
-        <tr>
-          <th class="no1">공지</th>
-          <td class="no2" id="none left"><a href="#">서문야시장 정기휴무일 변경안내</a></td>
-          <td class="no3" id="none">08-13</td>
-          <td class="no4" id="none"></td>
-        </tr>
-        <tr>
-          <th class="no1">공지</th>
-          <td class="no2" id="none left"><a href="#">영업시간 임시 단축 안내</a></td>
-          <td class="no3" id="none">07-30</td>
-          <td class="no4" id="none"></td>
-        </tr>
-        <tr>
-          <th class="no1">공지</th>
-          <td class="no2" id="none left"><a href="#">2021 야시장 매대 운영자 모집 식품분야 품평회 심사 대상 명단 발표 및 품평회 설명 자료 게시</a></td>
-          <td class="no3" id="none">04-20</td>
-          <td class="no4" id="none">
-            <img src="../img/icon_file.png">
-          </td>
-        </tr>
-        <tr>
-          <th class="no1">공지</th>
-          <td class="no2" id="none left"><a href="#">2021야시장 매대운영자 모집</a></td>
-          <td class="no3" id="none">03-19</td>
-          <td class="no4" id="none">
-            <img src="../img/icon_file.png">
-          </td>
         </tr>
         <% rows.forEach((row, index) => { %>
           <tr>
@@ -102,10 +68,7 @@
               <a onclick="javascript:location.href='/seomun_notice_page?id=<%=row.id%>'"><%= row.title %></a>
             </td>
             <td class="no3" id="none"><%= row.s_update %></td>
-            <td class="no4">
-              <input type="button" onclick="javascript:location.href='/new?id=<%=row.id%>'" value="수정">
-              <input type="button" onclick="javascript:location.href='/deleteNotice?id=<%=row.id%>'" value="삭제">
-            </td>
+            <td class="no4"></td>
           </tr>
         <% }) %>
       </tbody>         
