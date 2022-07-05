@@ -35,8 +35,9 @@ header {
     width: 1440px;
     margin: auto;
     text-align: right;
-    margin-bottom: 10px;
     display: flex;
+    justify-content: end;
+    padding-top: 10px;
 }
 
 .t_login>a {
