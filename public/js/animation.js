@@ -31,8 +31,9 @@ function kakaoLogin() {
             Kakao.API.request({
                 url: '/v2/user/me',
                 success: function (response) {
-                    document.getElementById('user').innerHTML =
-                        response.kakao_account.profile.nickname;
+                    console.log(response);
+                    // document.getElementById('user').innerHTML =
+                    // response.kakao_account.profile.nickname;
                 }
             })
         }
