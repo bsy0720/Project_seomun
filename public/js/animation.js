@@ -1,3 +1,7 @@
+const {
+    response
+} = require("express");
+
 // 메인사진 스와이퍼 슬라이드
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
@@ -27,6 +31,7 @@ function kakaoLogin() {
             Kakao.API.request({
                 url: '/v2/user/me',
                 success: function (response) {
+                    console.log(response);
                     document.getElementById('user').innerHTML =
                         response.kakao_account.profile.nickname;
                 }
@@ -34,7 +39,7 @@ function kakaoLogin() {
         }
     })
 }
-console.log(kakaoLogin);
+
 
 function kakaoLogout() {
 
