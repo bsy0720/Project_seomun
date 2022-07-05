@@ -1,31 +1,32 @@
-    
-  <div class="header_wrap">
-    <div class="m_header img">
-      <h2>고객센터</h2>
-    </div>
-    <div class="mb_main_header2"></div>
-    <nav class="l_header_wrap">
-      <ul class="l_header">
-        <li><a href="#">공지사항</a></li>
-        <li><a href="#">편의시설</a></li>
-        <li><a href="#">여행정보</a></li>
-      </ul>
-    </nav>
-    <nav class="mb_l_header_wrap">
-      <ul class="mb_l_header">
-        <li><a href="#">공지사항</a></li>
-        <li><a href="#">편의시설</a></li>
-        <li><a href="#">여행정보</a></li>
-      </ul>
-    </nav>
+<div class="m_header_wrap">
+  <div class="m_header">
+    <h2>고객센터</h2>
   </div>
+</div>
 
- 
-<main class="w1200">
-  <section id="container">
-   <article class="contents">
+<div class="header_wrap">
+  <div class="mb_main_header2"></div>
+  <nav class="l_header_wrap">
+    <ul class="l_header">
+      <li><a href="#">공지사항</a></li>
+      <li><a href="#">편의시설</a></li>
+      <li><a href="#">여행정보</a></li>
+    </ul>
+  </nav>
+  <nav class="mb_l_header_wrap">
+    <ul class="mb_l_header">
+      <li><a href="#">공지사항</a></li>
+      <li><a href="#">편의시설</a></li>
+      <li><a href="#">여행정보</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+<div class="w1200">
+  <div id="container">
     <div class="search">
-     <span class="search_txt">SEARCH</span>
+      <span class="search_txt">SEARCH</span>
       <div class="select">
         <select id="search">
           <option value="data_title">제목</option>
@@ -37,31 +38,31 @@
         <input alt="검색" src="../img/btn_search.png" type="image" class="btnSearch">
       </div>
     </div>
-   </article>
-  <div class="table_wrap web">
-    <table>
-      <thead>     
-        <tr>
-          <th class="no1">번호</th>
-          <th class="no2">제목</th>
-          <th class="no3">작성일</th>
-          <th class="no4">첨부</th>
-        </tr> 
-      </thead>         
-      <tbody>  
-       <tr>
-          <th class="no1">공지</th>
-          <td class="no2" id="none left"><a href="page">2022 야시장 매대 운영자 모집 품평회 심사 대상 명단 공지 첨부파일</a></td>
-          <td class="no3" id="none">2022-04-18</td>
-          <td class="no4" id="none"></td>
-        </tr>
-        <tr>
-          <th class="no1">공지</th>
-          <td class="no2" id="none left"><a href="#">2021 야시장 2차 매대 운영자 모집 품평회 심사 대상자 및 공고</a></td> <!--white space nowrap-->
-          <td class="no3" id="none">2021-11-02</td>
-          <td class="no4" id="none"></td>
-        </tr>
-        <% rows.forEach((row, index) => { %>
+    <div class="table_wrap web">
+      <table>
+        <thead>
+          <tr>
+            <th class="no1">번호</th>
+            <th class="no2">제목</th>
+            <th class="no3">작성일</th>
+            <th class="no4">첨부</th>
+          </tr>
+        </thead>
+        <tbody id="nt_table">
+          <tr>
+            <th class="no1">공지</th>
+            <td class="no2" id="none left"><a href="page">2022 야시장 매대 운영자 모집 품평회 심사 대상 명단 공지 첨부파일</a></td>
+            <td class="no3" id="none">2022-04-18</td>
+            <td class="no4" id="none"></td>
+          </tr>
+          <tr>
+            <th class="no1">공지</th>
+            <td class="no2" id="none left"><a href="#">2021 야시장 2차 매대 운영자 모집 품평회 심사 대상자 및 공고</a></td>
+            <!--white space nowrap-->
+            <td class="no3" id="none">2021-11-02</td>
+            <td class="no4" id="none"></td>
+          </tr>
+          <% rows.forEach((row, index) => { %>
           <tr>
             <td class="no1" id="none"><%=row.RNUM%></td>
             <td class="no2">
@@ -70,28 +71,28 @@
             <td class="no3" id="none"><%= row.s_update %></td>
             <td class="no4"></td>
           </tr>
-        <% }) %>
-      </tbody>         
-    </table>
-  </div>
-  <div class="n_btn" onclick="javascript:location.href='/notice_write'">
-    <a href="write">글쓰기</a>
-  </div>
-  <div class="page_bar">   
-    <a class="before" href="#"></a>
-    <a href="#">1</a>
-    <a href="#">2</a>
-    <a href="#">3</a>
-    <a href="#">4</a>
-    <a href="#">5</a>
-    <a href="#">6</a>
-    <a href="#">7</a>
-    <a href="#">8</a>
-    <a class="next" href="#"></a>
- </div>
- </section>
-   
-  <section class="mobile">
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+    <div class="n_btn" onclick="javascript:location.href='/notice_write'">
+      <a href="write">글쓰기</a>
+    </div>
+    <div class="page_bar">
+      <a class="before" href="#"></a>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <a href="#">7</a>
+      <a href="#">8</a>
+      <a class="next" href="#"></a>
+    </div>
+    </section>
+
+    <section class="mobile">
       <table>
         <tbody>
           <tr>
@@ -165,25 +166,24 @@
             </td>
           </tr>
         </tbody>
-      </table>      
-    </div>
-    <div class="page_bar1">
-      <a class="before1" href="#"></a>
-      <a href="#">1</a>
-      <a href="#">2</a>
-      <a href="#">3</a>
-      <a href="#">4</a>
-      <a href="#">5</a>
-      <a href="#">6</a>
-      <a href="#">7</a>
-      <a href="#">8</a>
-      <a class="next1" href="#"></a>
-    </div>
-  </section>
-</main>
+      </table>
+      <div class="page_bar1">
+        <a class="before1" href="#"></a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#">8</a>
+        <a class="next1" href="#"></a>
+      </div>
+    </section>
+    </main>
 
- 
- 
 
-<!--스크롤이 생길때는 테이블 반응형 css검색
+
+
+    <!--스크롤이 생길때는 테이블 반응형 css검색
 table-layout:fixed; -->

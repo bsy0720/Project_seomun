@@ -1,9 +1,7 @@
-
-
 .m_join_wrap {
- max-width: 768px;
- margin: 0 auto;
- margin-top: 150px;
+  max-width: 768px;
+  margin: 0 auto;
+  margin-top: 150px;
 }
 
 .m_join_wrap>h1 {
@@ -12,7 +10,7 @@
   margin-bottom: 50px;
 }
 
-h2 {
+#m_join_txt {
   margin-bottom: 20px;
   font-size: 30px;
   font-weight: bold;
@@ -88,7 +86,7 @@ label {
     font-size: 14px;
   }
 
-  
+
   div>h2 {
     margin-bottom: 10px;
     font-size: 20px;

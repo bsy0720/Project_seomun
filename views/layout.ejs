@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>서문시장 야시장</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common_seomun.css">
     <link rel="stylesheet" href="css/seomun_main.css">
@@ -16,71 +21,116 @@
     <link rel="stylesheet" href="css/food_join.css">
     <link rel="stylesheet" href="css/market_join.css">
     <link rel="stylesheet" href="css/sub_nav.css">
-    <link rel="stylesheet" href="css/notice_write.css">   
+    <link rel="stylesheet" href="css/notice_write.css">
 </head>
+
 <body>
     <header>
-        <div class="t_login">
-            <a href="login" class="right">로그인</a>
-            <span> | </span>
-            <a href="law">회원가입</a>
-        </div>
+        <ul class="t_login">
+            <li class="login" id="login2" onclick="javascript:kakaoLogin();">로그인</a></li>
+            <li><span id="user"> 님</span></li>
+            <li id="logout" onclick="javascript:kakaoLogout();">로그아웃</li>
+            <li><span> | </span></li>
+            <li id="join"><a href="law">회원가입</a></li>
+        </ul>
         <nav>
             <div class="t_header_logo"><a href="/">
-                <img src="img/logo.png">
-            </a></div>
+                    <img src="img/logo.png">
+                </a></div>
             <ul class="t_header m_none">
-              <li><a href="introduce">서문야시장</a></li>
-              <li><a href="#">먹거리·살거리</a></li>
-              <li><a href="#">서문거리예술문화</a></li>
-              <li><a href="#">참여마당</a></li>
-              <li><a href="seomun_notice">고객센터</a></li>
+                <li>
+                    <a href="introduce">
+                        서문야시장
+                    </a>
+                    <ul>
+                        <li><a href="introduce">야시장소개</a></li>
+                        <li><a href="#">매대위치</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        먹거리·살거리
+                    </a>
+                    <ul>
+                        <li><a href="#">퓨전&글로벌</a></li>
+                        <li><a href="#">한국전통식</a></li>
+                        <li><a href="#">스트리트푸드</a></li>
+                        <li><a href="#">살거리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        서문거리예술문화
+                    </a>
+                    <ul>
+                        <li><a href="#">거리예술학교</a></li>
+                        <li><a href="#">행사이벤트안내</a></li>
+                        <li><a href="#">주요관광지</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">참여마당</a>
+                    <ul>
+                        <li><a href="#">행사안내</a></li>
+                        <li><a href="#">현장스케치</a></li>
+                        <li><a href="#">언론보도</a></li>
+                        <li><a href="#">문의 및 제안</a></li>
+                        <li><a href="#">입점상담</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="seomun_notice">고객센터</a>
+                    <ul>
+                        <li><a href="seomun_notice">공지사항</a></li>
+                    </ul>
+                </li>
             </ul>
             <div><a class="t_header_img1" href="#"></a></div>
         </nav>
 
         <div class="h_mobile_wrap">
-            <div class="mb_t_login">
-                <a href="login" class="mb_right">로그인</a>
-                <span> | </span>
-                <a href="law">회원가입</a>
-            </div>
+            <ul class="mb_t_login">
+                <li class="mb_right" id="login2"><a href="login">로그인</a></li>
+                <li><span></span></li>
+                <li>로그아웃</li>
+            </ul>
+            <span> | </span>
+            <ul>
+                <li><a href="law">회원가입</a></li>
+            </ul>
             <div class="h_mobile">
                 <div class="m_hambuger"><a href="sub">
-                    <img src="img/m_menu.png">
-                </a></div>
+                        <img src="img/m_menu.png">
+                    </a></div>
                 <div class="h_mobile_img"><a href="/">
-                    <img src="img/logo.png">
-                </a></div>
+                        <img src="img/logo.png">
+                    </a></div>
                 <div class="m_search_img"><a href="#">
-                    <img src="img/m_search.png">
-                </a></div>
+                        <img src="img/m_search.png">
+                    </a></div>
             </div>
-        </div> 
+        </div>
     </header>
 
- 
-
-      
     <main>
-        <%- body %> 
+        <%- body %>
     </main>
-    
+
     <footer>
-        <div class="footer_wrap">
+        <div class="footer_wrap w1440">
             <div class="footer_l"></div>
             <div class="footer_r">
                 <div class="footer_sns_wrap">
                     <ul class="footer_sns">
                         <li><a href="#">
-                            <img src="img/insta.png">
-                        </a></li>
+                                <img src="img/insta.png">
+                            </a></li>
                         <li><a href="https://blog.naver.com/nightseomun">
-                            <img src="img/naver.png">
-                        </a></li>
+                                <img src="img/naver.png">
+                            </a></li>
                         <li><a href="https://www.facebook.com/nightseomun/">
-                            <img src="img/fb.png">
-                        </a></li>
+                                <img src="img/fb.png">
+                            </a></li>
                     </ul>
                 </div>
                 <div class="footer_txt">
@@ -93,14 +143,14 @@
             <div class="m_footer">
                 <ul class="m_footer_sns">
                     <li><a href="#">
-                        <img src="img/insta.png">
-                    </a></li>
+                            <img src="img/insta.png">
+                        </a></li>
                     <li><a href="https://blog.naver.com/nightseomun">
-                        <img src="img/naver.png">
-                    </a></li>
+                            <img src="img/naver.png">
+                        </a></li>
                     <li><a href="https://www.facebook.com/nightseomun/">
-                        <img src="img/fb.png">
-                    </a></li>
+                            <img src="img/fb.png">
+                        </a></li>
                 </ul>
             </div>
             <div class="m_footer_txt">
@@ -110,5 +160,9 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script src="js/animation.js"></script>
 </body>
+
 </html>

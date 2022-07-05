@@ -1,7 +1,11 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif !important;
+}
+
 body {
     width: 100%;
     min-height: 100%;
-    background-color: #ededed;   
+    background-color: #ededed;
 }
 
 .w1100 {
@@ -9,6 +13,12 @@ body {
     margin: auto;
     padding: 50px;
     box-sizing: border-box;
+}
+
+.w1440 {
+    width: 1440px;
+    margin: auto;
+    padding-top: 100px;
 }
 
 
@@ -26,6 +36,7 @@ header {
     margin: auto;
     text-align: right;
     margin-bottom: 10px;
+    display: flex;
 }
 
 .t_login>a {
@@ -36,7 +47,22 @@ header {
 
 .t_login span {
     margin: 0 5px;
-    color: #e5e5e5;
+}
+
+.t_login>li {
+    color: #fff;
+}
+
+#logout {
+    margin-left: 5px;
+}
+
+#join {
+    margin-left: 5px;
+}
+
+#join>a {
+    color: #fff;
 }
 
 
@@ -79,8 +105,8 @@ nav {
 }
 
 nav>div:last-child {
-    width:80px;
-    height:80px;
+    width: 80px;
+    height: 80px;
     background-color: #f2d01f;
 }
 
@@ -96,25 +122,6 @@ nav>div:last-child {
 
 .header_wrap {
     width: 100%;
-}
-
-.m_header {
-    width: 100%;
-    height: 300px;
-    text-align: center;
-    overflow: hidden;   
-}
-
-.img {
-    background: url(../img/notice.png) no-repeat center center;
-    background-size: cover;
-}
-
-.m_header h2 {
-    font-size: 40px;
-    font-weight: 700;
-    color: #fff;
-    margin-top: 95px;        
 }
 
 .l_header_wrap {
@@ -135,7 +142,7 @@ nav>div:last-child {
 }
 
 .l_header>li>a {
-    color: #f2d01f;  
+    color: #f2d01f;
     font-weight: bold;
     font-size: 18px;
 }
@@ -175,20 +182,10 @@ nav>div:last-child {
     color: #000;
 }
 
-.main_m_header {
-    width: 100%;
-    height: 500px;
-    margin: auto;
-    background-image: url(../img/seomun2.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
 .h_mobile_wrap {
     width: 768px;
     background: #07072d;
-    display: none;  
+    display: none;
     position: relative;
 }
 
@@ -211,7 +208,7 @@ nav>div:last-child {
 .h_mobile {
     position: relative;
     height: 60px;
-} 
+}
 
 .m_hambuger img {
     display: block;
@@ -234,12 +231,13 @@ nav>div:last-child {
 }
 
 .m_search_img img {
-   position: absolute;
-   display: block;
-   width: 60px;
-   height: 60px;
-   right: 0; top: 10%;
-} 
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    right: 0;
+    top: 10%;
+}
 
 .mb_main_header {
     display: none;
@@ -248,7 +246,7 @@ nav>div:last-child {
     background-image: url(../img/seomun2.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
 
 
@@ -257,7 +255,6 @@ nav>div:last-child {
 
 /**********************footer*******************************/
 footer {
-    width: 100%;
     background-color: #575757;
     margin: auto;
     padding-bottom: 20px;
@@ -265,10 +262,9 @@ footer {
 }
 
 .footer_wrap {
-    width: 1440;
     height: 300px;
     display: flex;
-    margin: auto;
+    padding-top: 0;
 }
 
 .footer_l {
@@ -277,7 +273,7 @@ footer {
     background-image: url(../img/logo.png);
     background-position: left center;
     background-repeat: no-repeat;
-    background-size: 55% auto;
+    background-size: 60%;
 }
 
 .footer_r {
@@ -329,7 +325,7 @@ footer {
 
 .m_footer_sns {
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     margin: auto;
     padding: 50px 0 40px 0;
 }
@@ -355,9 +351,8 @@ footer {
     font-size: 14px;
 }
 
-main {
-    width: 1440px;
-    margin: auto;
+.m_footer_wrap {
+    display: none;
 }
 
 
@@ -370,9 +365,9 @@ main {
     .t_login {
         width: 100%;
     }
-    
+
     nav {
-    width: 960px;
+        width: 960px;
     }
 
     .t_header_logo {
@@ -429,10 +424,10 @@ main {
 
 
 @media screen and (max-width: 1000px) {
-    
+
 
     .h_mobile_wrap {
-        display:block;
+        display: block;
         width: 100%;
     }
 
@@ -443,7 +438,7 @@ main {
     }
 
     nav>div:last-child {
-        width:  60px;
+        width: 60px;
         height: 60px;
     }
 
@@ -472,7 +467,7 @@ main {
     .m_header {
         display: none;
     }
- 
+
 
 
 
@@ -551,7 +546,7 @@ main {
 
     .m_footer_wrap {
         width: 100%;
-    } 
+    }
 
     nav {
         display: none;
@@ -577,21 +572,3 @@ main {
 
     /*max-width: 768px*/
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

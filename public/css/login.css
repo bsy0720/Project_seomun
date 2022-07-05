@@ -1,10 +1,9 @@
-
-.s_login{
-   width: 800px;
-   margin: 0 auto;
-   text-align: center;
-   position: relative;
-   margin-top: 150px;
+.s_login {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    margin-top: 150px;
 }
 
 .s_login>h1 {
@@ -23,7 +22,8 @@
     margin: auto;
 }
 
-#id, #pw {
+#id,
+#pw {
     width: 100%;
     height: 50px;
 }
@@ -32,7 +32,7 @@
     margin: 10px 0;
     border-radius: 3px;
 }
-   
+
 .s_btn_wrap {
     margin: auto;
 }
@@ -80,17 +80,12 @@
 }
 
 
-input[type=text] {
+.login>input {
     border: 1px solid #07072d;
     border-radius: 3px;
     padding-left: 5px;
 }
 
-input[type=password] {
-    border: 1px solid #07072d;
-    border-radius: 3px;
-    padding-left: 5px;
-}
 
 
 
@@ -100,21 +95,21 @@ input[type=password] {
 
 
 
-.s_login {
-    width: 100%;
-}
+    .s_login {
+        width: 100%;
+    }
 
-.s_login>h1>img {
-    width: 55%;
-}
+    .s_login>h1>img {
+        width: 55%;
+    }
 
-.login_wrap {
-    width: 100%;
-}
+    .login_wrap {
+        width: 100%;
+    }
 
-.login_txt {
-    white-space: nowrap;
-}
+    .login_txt {
+        white-space: nowrap;
+    }
 
 
     /*max-width: 768px*/
