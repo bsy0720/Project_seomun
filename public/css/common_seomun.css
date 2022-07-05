@@ -183,6 +183,7 @@ nav>div:last-child {
 }
 
 .h_mobile_wrap {
+    display: none;
     width: 768px;
     background: #07072d;
     display: none;

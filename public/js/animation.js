@@ -34,6 +34,7 @@ function kakaoLogin() {
         }
     })
 }
+console.log(kakaoLogin);
 
 function kakaoLogout() {
 
