@@ -1,7 +1,7 @@
 // 카카오 로그인
 Kakao.init('4169f24b838b75e164208f2d4095211d');
 Kakao.isInitialized();
-document.getElementById('log').style.display = 'none';
+document.getElementById('logout').style.display = 'none';
 
 function kakaoLogin() {
     Kakao.Auth.login({
