@@ -1,7 +1,7 @@
 // 카카오 로그인
 Kakao.init('4169f24b838b75e164208f2d4095211d');
 Kakao.isInitialized();
-document.getElementById('logout').style.display = 'none';
+document.getElementById('log').style.display = 'none';
 
 function kakaoLogin() {
     Kakao.Auth.login({
@@ -33,6 +33,8 @@ function kakaoLogout() {
                 alert('로그아웃 되었습니다.')
             }
         })
-        Kakao.Auth.setAccessToken(undefined)
     }
+    Kakao.Auth.logout(function () {
+        alert('logout ok\naccess token -> ' + Kakao.Auth.getAccessToken())
+    })
 }
