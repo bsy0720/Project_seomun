@@ -1,7 +1,3 @@
-const {
-    response
-} = require("express");
-
 // 메인사진 스와이퍼 슬라이드
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
