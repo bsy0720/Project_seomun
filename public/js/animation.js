@@ -1,3 +1,4 @@
+// 메인 사진 슬라이드 스와이퍼
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
