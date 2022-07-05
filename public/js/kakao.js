@@ -32,6 +32,9 @@ function kakaoLogout() {
                 document.getElementById('login2').style.display = 'block';
                 document.getElementById('logout').style.display = 'none';
                 alert(' 로그아웃 되었습니다.')
+            },
+            fail: function (error) {
+                console.log(error);
             }
         })
     }
