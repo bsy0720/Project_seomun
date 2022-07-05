@@ -24,13 +24,13 @@ function kakaoLogin() {
 function kakaoLogout() {
     if (!Kakao.Auth.getAccessToken()) {
         Kakao.API.request({
-            url: '/v2/user/me',
+            url: '/v1/user/unlink',
             success: function (response) {
                 console.log(response);
                 document.getElementById('user').style.display = 'none';
                 document.getElementById('login2').style.display = 'block';
                 document.getElementById('logout').style.display = 'none';
-                alert('로그아웃 되었습니다.')
+                alert(' 로그아웃 되었습니다.')
             }
         })
     }
