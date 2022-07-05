@@ -1,5 +1,5 @@
 // 메인사진 스와이퍼 슬라이드
-var swiper = new Swiper(".mySwiper", {
+var swiper = new swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
@@ -28,8 +28,8 @@ function kakaoLogin() {
                 url: '/v2/user/me',
                 success: function (response) {
                     console.log(response);
-                    // document.getElementById('user').innerHTML =
-                    // response.kakao_account.profile.nickname;
+                    document.getElementById('user').innerHTML =
+                        response.kakao_account.profile.nickname;
                 }
             })
         }
