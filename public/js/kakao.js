@@ -1,7 +1,7 @@
 // 카카오 로그인
 Kakao.init('4169f24b838b75e164208f2d4095211d');
 Kakao.isInitialized();
-// 
+document.getElementById('logout').style.display = 'none';
 
 function kakaoLogin() {
     Kakao.Auth.login({
@@ -13,7 +13,7 @@ function kakaoLogin() {
                     document.getElementById('user').innerText =
                         response.kakao_account.profile.nickname;
                     document.getElementById('login2').style.display = 'none';
-                    document.getElementById('logout').style.display = 'none';
+
                     alert(response.kakao_account.profile.nickname + '님 로그인 되었습니다.')
                 }
             })
