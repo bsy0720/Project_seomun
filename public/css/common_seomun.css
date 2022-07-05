@@ -58,6 +58,10 @@ header {
     margin-left: 5px;
 }
 
+#login2>a {
+    color: #fff;
+}
+
 #join {
     margin-left: 5px;
 }
@@ -65,7 +69,6 @@ header {
 #join>a {
     color: #fff;
 }
-
 
 nav {
     width: 1440px;
@@ -93,6 +96,9 @@ nav {
 
 .t_header>li {
     width: 100%;
+    float: left;
+    width: 20%;
+    line-height: 40px;
 }
 
 .t_header a {
@@ -103,6 +109,22 @@ nav {
     text-align: center;
     font-weight: bold;
     padding: 0 25px;
+}
+
+.dept01 {
+    display: none;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#nop {
+    float: none;
+}
+
+.none::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 nav>div:last-child {
@@ -357,6 +379,18 @@ footer {
     display: none;
 }
 
+.topMenu {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 40px;
+}
+
+.topMenu::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 
 
 

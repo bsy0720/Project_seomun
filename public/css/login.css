@@ -15,6 +15,7 @@
 
 .login_wrap {
     min-height: 400px;
+    padding-top: 0;
 }
 
 .tg {
@@ -84,6 +85,11 @@
     border: 1px solid #07072d;
     border-radius: 3px;
     padding-left: 5px;
+}
+
+.kakao_img>img {
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 

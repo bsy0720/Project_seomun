@@ -1,3 +1,17 @@
+// 메뉴드롭다운
+$(document).on('mouseover', '.topMenu a', function () {
+    $('.dept01').slideDown(300);
+});
+$(document).on('mouseover', 'div', function () {
+    if (!$(this).hasClass('topMenu')) {
+        $('dept01').slideUp(300);
+    }
+})
+
+
+
+
+
 // 메인 사진 슬라이드 스와이퍼
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
