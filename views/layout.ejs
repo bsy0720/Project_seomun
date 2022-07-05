@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="css/market_join.css">
     <link rel="stylesheet" href="css/sub_nav.css">
     <link rel="stylesheet" href="css/notice_write.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script src="js/animation.js"></script>
 </head>
 
 <body>
@@ -91,9 +94,9 @@
 
         <div class="h_mobile_wrap">
             <ul class="mb_t_login">
-                <li class="mb_right" id="login2"><a href="login">로그인</a></li>
-                <li><span></span></li>
-                <li>로그아웃</li>
+                <li class="mb_right" id="login2" onclick="javascript:kakaoLogin();">로그인</li>
+                <li id="user"><span> 님</span></li>
+                <li id="logout" onclick="javascript:kakaoLogout();">로그아웃</li>
             </ul>
             <span> | </span>
             <ul>
@@ -161,9 +164,6 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-    <script src="js/animation.js"></script>
 </body>
 
 </html>
