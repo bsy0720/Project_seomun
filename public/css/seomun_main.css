@@ -22,10 +22,11 @@
 
 .top a {
     color: #000;
-    border: 2px solid #000;
+    border: 1px solid #000;
     padding: 5px;
     border-radius: 3px;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 .sm_menu_wrap {
@@ -217,7 +218,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
 
 .swiper-slide img {
@@ -379,10 +380,6 @@
 
 
 @media screen and (max-width: 768px) {
-
-    .w1440 {
-        width: 100%;
-    }
 
     .m_none {
         display: none;

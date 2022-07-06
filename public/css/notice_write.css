@@ -32,6 +32,10 @@ form {
     padding: 10px 0;
 }
 
+#nw_table .imp {
+    width: 99%;
+}
+
 .w_right {
     width: 20%;
     text-align: center;
@@ -51,5 +55,18 @@ form {
 .big textarea {
     width: 1280px;
     height: 600px;
+    margin-left: 5px;
+}
+
+.file {
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.save {
+    padding: 5px 10px;
+}
+
+.list {
     margin-left: 5px;
 }

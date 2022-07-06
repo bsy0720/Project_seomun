@@ -6,6 +6,17 @@
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: 100%;
+  position: relative;
+}
+
+.into_m_img>h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .mb_main_header1 {

@@ -146,9 +146,9 @@ tbody>tr>#none {
 }
 
 tbody>tr a {
-  color: #525252;
   font-size: 18px;
   color: #525252;
+  font-weight: 500;
 }
 
 tbody #left {
@@ -181,7 +181,8 @@ tbody #left {
   width: 100%;
   text-align: center;
   padding-top: 50px;
-
+  display: flex;
+  justify-content: center;
 }
 
 .page_bar a {
@@ -199,13 +200,11 @@ tbody #left {
 }
 
 .page_bar .before {
-  background-image: url(../img/page_l.png);
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 .page_bar .next {
-  background-image: url(../img/page_r.png);
-  margin-left: 50px;
+  margin-left: 20px;
 }
 
 
@@ -279,6 +278,9 @@ tbody #left {
   height: 50px;
   background-color: #fff;
   color: #525252;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #cbcbcb;
 }
 
 
@@ -463,6 +465,10 @@ tbody #left {
 
   tbody>tr a {
     font-size: 16px;
+  }
+
+  .m_header_wrap {
+    display: none;
   }
 
 

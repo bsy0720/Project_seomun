@@ -6,23 +6,23 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
 
-  .mb_l_header_wrap {
-      display: none;
-      width: 100%;
-  }
+.mb_l_header_wrap {
+    display: none;
+    width: 100%;
+}
 
-  .mb_l_header>li {
-      display: none;
-      width: 33.33%;
-  }
+.mb_l_header>li {
+    display: none;
+    width: 33.33%;
+}
 
-  .ntp_btn {
+.ntp_btn {
     width: 100%;
     margin-top: 20px;
     text-align: right;
-  }
+}
 
 
 
@@ -53,7 +53,8 @@ section {
     background: url(../img/sns_btn.png) no-repeat center;
     background-size: cover;
     position: absolute;
-    right: 0; bottom: 10px;
+    right: 0;
+    bottom: 10px;
 }
 
 #night {
@@ -132,6 +133,8 @@ section {
 
 .left2 a {
     color: #525252;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .right2_wrap {
@@ -141,22 +144,19 @@ section {
 }
 
 .right2 {
-    width: 180px;
-    height: 60px;
+    width: 80px;
     color: #000;
     background-color: #fff;
     border: 1px solid #000;
-    margin: 20px 0;
 }
 
 .right2_wrap a {
     display: inline-block;
-    margin-left: 5px;
     font-weight: 400;
     text-align: center;
-    font-size: 22px;
-    line-height: 60px;
+    font-size: 18px;
     box-sizing: border-box;
+    padding: 5px 0;
 }
 
 
@@ -172,9 +172,9 @@ section {
         width: 100%;
     }
 
-  
 
-    
+
+
 
 
     /*max-width: 1200px*/
@@ -200,16 +200,16 @@ section {
     .mb_main_header2 {
         display: block;
         width: 100%;
-      }
+    }
 
-      .w1100 {
-          width: 100%;
-      }
+    .w1100 {
+        width: 100%;
+    }
 
 
     /*max-width: 1000px*/
-  }
-  
+}
+
 
 
 
@@ -222,45 +222,41 @@ section {
     .l_header_wrap {
         display: block;
         width: 100%;
-    } 
+    }
 
-   .mb_l_header_wrap{
-       display: block;
-   }
+    .mb_l_header_wrap {
+        display: block;
+    }
 
-   .w1100 {
-       width: 100%;
-       white-space: nowrap;
-   }
+    .w1100 {
+        width: 100%;
+        white-space: nowrap;
+    }
 
 
-   h1 {
-       font-size: 20px;
-   }
+    h1 {
+        font-size: 20px;
+    }
 
-   .middle_wrap>p {
-       font-size: 17px;
-   }
+    .middle_wrap>p {
+        font-size: 17px;
+    }
 
-   .middle>p>a {
-       font-size: 15px;
-   }
+    .middle>p>a {
+        font-size: 15px;
+    }
 
-   .left>p {
-       font-size: 15px;
-   }
+    .left>p {
+        font-size: 15px;
+    }
 
-   .left2>p {
-       font-size: 17px;
-   }
+    .left2>p {
+        font-size: 17px;
+    }
 
-   .left2>span {
-       font-size: 15px;
-   }
+    .left2>span {
+        font-size: 15px;
+    }
 
     /*max-width: 768px*/
 }
-
-
-
-
