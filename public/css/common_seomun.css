@@ -467,7 +467,7 @@ li {
 
 /* 토글 사이드바 버튼 아이콘 */
 .ico {
-    position: fixed;
+    position: absolute;
     left: 20px;
     width: 20px;
     height: 20px;
@@ -646,8 +646,6 @@ li {
     .t_login {
         display: none;
     }
-
-
 
 
 
