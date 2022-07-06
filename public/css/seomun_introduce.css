@@ -511,10 +511,6 @@
     font-size: 17px;
   }
 
-  .into_m_img {
-    width: 1000px;
-  }
-
   .s_title {
     font-size: 17px;
   }
@@ -565,6 +561,10 @@
 
   .txt_wrap3 {
     width: 100%;
+  }
+
+  .into_m_img>h2 {
+    font-size: 35px;
   }
 
 
@@ -767,7 +767,7 @@
   }
 
   .holiday_img {
-    width: 70%;
+    width: 100%;
   }
 
   .contact_wrap {

@@ -27,15 +27,14 @@
 
 <body>
     <header>
-        <ul class="t_login">
-            <li class="login nope" id="login2">
-                <a href="login">로그인</a>
-            </li>
-            <li class="nope"><span id="user">님</span></li>
-            <li class="nope" id="logout" onclick="javascript:kakaoLogout();">로그아웃</li>
-            <li class="nope"><span> | </span></li>
-            <li class="nope" id="join"><a href="law">회원가입</a></li>
-        </ul>
+        <div>
+            <ul class="t_login">
+                <li class="mb_right" id="login2" onclick="javascript:kakaoLogin();">로그인</li>
+                <li id="logout" onclick="javascript:kakaoLogout();">로그아웃</li>
+                <span> | </span>
+                <li><a href="law">회원가입</a></li>
+            </ul>
+        </div>
         <nav>
             <div class="t_header_logo"><a href="/">
                     <img src="img/logo.png">
@@ -84,16 +83,7 @@
         </nav>
 
         <div class="h_mobile_wrap">
-            <ul class="mb_t_login">
-                <li class="mb_right" id="login2" onclick="javascript:kakaoLogin();">로그인</li>
-                <li id="user"><span> 님</span></li>
-                <li id="logout" onclick="javascript:kakaoLogout();">로그아웃</li>
-            </ul>
-            <span> | </span>
-            <ul class="mb_join">
-                <li><a href="law">회원가입</a></li>
-            </ul>
-            <div class="h_mobile">ve
+            <div class="h_mobile">
                 <div class="mobile-top-bar">
                     <div class="ico toggle-side-bar-btn" data-ico-now-animating="N">
                         <div></div>
@@ -157,6 +147,13 @@
                                     </ul>
                                 </li>
                             </ul>
+                            <div>
+                                <ul class="mb_login_wrap">
+                                    <li class="mb_login"><a href="login">로그인</a></li>
+                                    <li class="mb_login"><span>|</span></li>
+                                    <li class="mb_login"><a href="law">회원가입</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

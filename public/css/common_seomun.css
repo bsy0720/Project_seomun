@@ -41,18 +41,22 @@ header {
     box-sizing: border-box;
 }
 
-.t_login>a {
-    color: #f2d01f;
+.t_login>li {
     font-size: 14px;
-    font-weight: 500;
+    color: #fff;
+    padding: 0 10px;
+    cursor: pointer;
 }
 
 .t_login span {
-    margin: 0 5px;
+    font-size: 14px;
+    color: #fff;
 }
 
-.t_login>li {
+.t_login>li>a {
     color: #fff;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 #logout {
@@ -85,20 +89,16 @@ nav {
 
 .t_header_logo {
     width: 300px;
-    line-height: 70px;
 }
-
 
 .t_header_logo img {
     width: 100%;
 }
 
-
 ul li {
     list-style: none;
 }
 
-/* a태그에 텍스트 밑줄을 없애고 색상을 #333 */
 a {
     text-decoration: none;
     color: #fff;
@@ -106,8 +106,6 @@ a {
     font-size: 20px;
 }
 
-/* 글자크기를 16px 맑은 고딕 굵게하고 width넓이 700, 높이 50만큼 배경색은 #ccc, 글자색은 검정색, 라인높이50px
-menu박스 가운데정렬, 글자가운데 정렬 */
 #menu {
     color: black;
     line-height: 50px;
@@ -115,12 +113,10 @@ menu박스 가운데정렬, 글자가운데 정렬 */
     text-align: center;
 }
 
-/* menu태그 자식의 ul의 자식 li를 왼쪽정렬과 넓이 140설정 */
 #menu>ul>li {
     float: left;
-    width: 140px;
     position: relative;
-    padding: 0 30px;
+    padding: 0 50px;
 }
 
 #menu>ul>li>ul {
@@ -130,6 +126,8 @@ menu박스 가운데정렬, 글자가운데 정렬 */
     font-size: 14px;
     background: #f2d01f;
     z-index: 9999;
+    text-align: center;
+    left: 20%;
 }
 
 #menu #sub {
@@ -148,8 +146,8 @@ menu박스 가운데정렬, 글자가운데 정렬 */
 
 
 nav>div:last-child {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     background-color: #f2d01f;
 }
 
@@ -251,7 +249,6 @@ nav>div:last-child {
 
 .h_mobile {
     position: relative;
-    height: 60px;
 }
 
 .m_hambuger img {
@@ -280,7 +277,7 @@ nav>div:last-child {
     width: 60px;
     height: 60px;
     right: 0;
-    top: 10%;
+    bottom: -5px;
 }
 
 .mb_main_header {
@@ -291,6 +288,31 @@ nav>div:last-child {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.mb_login_wrap {
+    display: flex;
+    margin-left: 15px;
+}
+
+.mb_login_wrap>.mb_login {
+    font-size: 14px;
+    color: #fff;
+
+}
+
+.mb_login_wrap>.mb_login {
+    padding: 0;
+}
+
+.mb_login_wrap>.mb_login>a {
+    font-size: 14px;
+    padding: 0;
+}
+
+.mb_login_wrap>.mb_login>span {
+    font-size: 14px;
+    color: #fff;
 }
 
 
@@ -445,9 +467,8 @@ li {
 
 /* 토글 사이드바 버튼 아이콘 */
 .ico {
-    position: absolute;
-    top: 50%;
-    left: 8px;
+    position: fixed;
+    left: 20px;
     width: 20px;
     height: 20px;
     transform: translatey(-50%);
@@ -521,7 +542,7 @@ li {
     width: 250px;
     height: 100%;
     background-color: #07072d;
-    padding-top: 150px;
+    padding-top: 100px;
     transition: left .5s;
 }
 
@@ -559,12 +580,31 @@ li {
     }
 
     nav {
-        width: 960px;
+        width: 100%;
+    }
+
+    #menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #menu>ul>li {
+        padding: 0;
+    }
+
+    #menu>ul>li>ul {
+        left: 10%;
+    }
+
+    #menu>ul>li>a {
+        margin: 0 30px;
+        font-size: 18px;
     }
 
     .t_header_logo {
-        width: 200px;
-        margin-top: 10px;
+        width: 250px;
     }
 
     .t_header_logo>img {
@@ -602,6 +642,11 @@ li {
     main {
         width: 100%;
     }
+
+    .t_login {
+        display: none;
+    }
+
 
 
 
@@ -669,6 +714,8 @@ li {
 
 
 
+
+
     /*max-width: 1000px*/
 }
 
@@ -694,7 +741,6 @@ li {
 
     .m_search_img {
         width: 60px;
-        height: 60px;
         top: 35px;
     }
 
