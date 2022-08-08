@@ -21,7 +21,6 @@
 
 .mb_main_header1 {
   display: none;
-  width: 768px;
   height: 200px;
   background-image: url(../img/jeonkyeong1_.jpg);
   background-position: bottom center;
@@ -589,11 +588,6 @@
 
 
 @media screen and (max-width: 768px) {
-
-  .i_w1440 {
-    width: 100%;
-  }
-
   .m_title1 {
     font-size: 16px;
   }
@@ -812,6 +806,10 @@
 
   .mb_main_header1 {
     display: block;
+  }
+
+  .m_box1 {
+    margin-top: 60px;
   }
 
 

@@ -748,6 +748,13 @@ li {
 
 
 @media screen and (max-width: 768px) {
+    main {
+        width: 100%;
+    }
+
+    .w1440 {
+        width: 100%;
+    }
 
     .m_none {
         display: none;
@@ -824,6 +831,11 @@ li {
 
     .t_login {
         display: none;
+    }
+
+    #MOVE_TOP_BTN {
+        right: 5px;
+        bottom: 40px;
     }
 
 
