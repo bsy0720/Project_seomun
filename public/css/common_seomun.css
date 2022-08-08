@@ -17,8 +17,7 @@ body {
 
 .w1440 {
     width: 1440px;
-    margin: auto;
-    padding-top: 100px;
+    margin: 0 auto;
 }
 
 
@@ -80,7 +79,7 @@ header {
 }
 
 nav {
-    width: 1440px;
+    width: 100%;
     display: flex;
     white-space: nowrap;
     align-items: center;
@@ -292,7 +291,7 @@ nav>div:last-child {
 
 .mb_login_wrap {
     display: flex;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .mb_login_wrap>.mb_login {
@@ -552,7 +551,7 @@ li {
 
 .left-side-bar>.menu-1 ul>li>a {
     display: block;
-    padding: 5px;
+    padding: 0 5px;
 }
 
 .left-side-bar>.menu-1>ul ul {
@@ -573,7 +572,33 @@ li {
     padding: 0;
 }
 
+
+
+/***********기타**************/
+#MOVE_TOP_BTN {
+    position: fixed;
+    right: 2%;
+    bottom: 50px;
+    display: none;
+    z-index: 999;
+    border: 3px solid #f2d01f;
+    color: #07072d;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+
+
+
+
 @media screen and (max-width: 1200px) {
+    .w1440 {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
 
     .t_login {
         width: 100%;

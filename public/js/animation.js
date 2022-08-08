@@ -97,3 +97,21 @@ $('.left-side-bar-box').click(function () {
 $('.left-side-bar').click(function (e) {
     e.stopPropagation();
 });
+
+// top버튼
+$(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+            $('#MOVE_TOP_BTN').fadeIn();
+        } else {
+            $('#MOVE_TOP_BTN').fadeOut();
+        }
+    });
+
+    $("#MOVE_TOP_BTN").click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 400);
+        return false;
+    });
+});

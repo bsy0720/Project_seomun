@@ -31,9 +31,9 @@
 
 .sm_menu_wrap {
     width: 100%;
-    background-color: #e5e5e5;
     display: flex;
     position: relative;
+    padding-top: 100px;
 }
 
 .sm_video {
@@ -246,10 +246,6 @@
 
 
 @media screen and (max-width: 1200px) {
-    .w1440 {
-        width: 100%;
-    }
-
     .sm_menu_wrap {
         width: 100%;
         margin: auto;
@@ -412,7 +408,7 @@
         width: 100%;
     }
 
-    .top>p {
+    .top>.p1 {
         font-size: 18px;
         font-weight: bold;
         margin-bottom: 10px;
