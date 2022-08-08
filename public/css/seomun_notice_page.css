@@ -97,7 +97,7 @@ section {
     text-decoration: underline;
 }
 
-.left {
+#left {
     text-align: left;
     padding: 30px;
     border-bottom: 1px solid #c4c4c4;

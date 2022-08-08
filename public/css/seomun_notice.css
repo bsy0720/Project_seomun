@@ -260,7 +260,7 @@ tbody #left {
   margin-left: 10px;
 }
 
-.mobile tbody>tr>td {
+.mobile #nt_table>tr>td {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -274,8 +274,6 @@ tbody #left {
 
 .n_btn>a {
   padding: 10px 20px;
-  width: 170px;
-  height: 50px;
   background-color: #fff;
   color: #525252;
   font-size: 16px;
@@ -394,8 +392,9 @@ tbody #left {
   }
 
   tbody>tr>td {
-    padding: 50px 0;
+    padding: 20px 10px 0;
     font-size: 14px;
+    box-sizing: border-box;
   }
 
   .textbox {
@@ -446,6 +445,7 @@ tbody #left {
     width: 92px;
     font-size: 16px;
     text-align: center;
+    border-right: 1px solid #ededed;
   }
 
 
@@ -471,8 +471,6 @@ tbody #left {
   .m_header_wrap {
     display: none;
   }
-
-
 
 
 
