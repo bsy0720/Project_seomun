@@ -1,19 +1,19 @@
 <section>
-    <h2 id="nt_txt">공지사항 작성</h2>
+    <h2 id="nt_txt" class="w1440">공지사항 작성</h2>
     <% if(typeof errs !== 'undefined') { %>
     <% errs.forEach(() => { %>
     <h3><%err.param%> : <%=err.msg%></h3>
     <%})%>
     <%}%>
-    <form method="POST" action="/store" class="hro">
+    <form method="POST" action="/store" class="w1440">
         <table id="nw_table">
             <tr>
                 <td class="w_right"><label>제목</label></td>
-                <td><input type="text" id="noti_w_title" class="ti hro imp" name="title"></td>  <!--인터페이스 구현서 안에 있는 아이디 작성-->
+                <td><input type="text" class="title_sec" name="title"></td>  <!--인터페이스 구현서 안에 있는 아이디 작성-->
             </tr>
             <tr>
                 <td class="w_right"><label>비밀번호</label></td>
-                <td><input type="password" class="hro" name="pw"></td>
+                <td><input type="password" name="pw"></td>
             </tr>
             <tr class="big">
                 <td class="w_right"><label>내용 작성</label></td>
@@ -22,7 +22,7 @@
             <tr>
                 <td class="w_right"><label>첨부</label></td>
                 <td>
-                    <input type="text" class="hro">
+                    <input type="text">
                     <input type="button" value="파일첨부" class="file">
                 </td>
             </tr>

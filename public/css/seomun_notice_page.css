@@ -258,5 +258,9 @@ section {
         font-size: 15px;
     }
 
+    .big textarea {
+        width: 100%;
+    }
+
     /*max-width: 768px*/
 }
