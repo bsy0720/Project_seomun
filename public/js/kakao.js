@@ -95,6 +95,12 @@ function joinform_check() {
     document.join_form.submit(); //유효성 검사의 포인트   
 }
 
+//아이디 중복체크 팝업창(현재 공백문서)
+function id_check() {
+    //window.open("팝업될 문서 경로", "팝업될 문서 이름", "옵션");
+    window.open("", "", "width=600, height=200, left=200, top=100");
+}
+
 
 
 
