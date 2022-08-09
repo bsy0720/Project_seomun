@@ -32,7 +32,14 @@
   text-align: center;
 }
 
-#only {
+#id_only,
+#pw_only,
+#re_m_pw_only,
+#name_only,
+#m_tel_only,
+#m_birth_only,
+#m_food_only,
+#m_store_only {
   border-radius: 3px;
   border: 1px solid lightgray;
   width: 60%;

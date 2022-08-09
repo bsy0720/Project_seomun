@@ -32,14 +32,21 @@
   text-align: center;
 }
 
-#only {
-  text-align: center;
+#l_id_only,
+#pw_only,
+#re_pw_only,
+#name_only,
+#tel_only,
+#birth_only,
+#food_only,
+#store_only {
   border-radius: 3px;
   border: 1px solid lightgray;
   width: 60%;
   height: 50px;
   margin-top: 5px;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 label {
